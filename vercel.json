@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+      "api/index.php": {
+        "runtime": "vercel-php@0.6.0"
+      }
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/api/index.php"
+      }
+    ],
+    "env": {
+      "APP_ENV": "production",
+      "APP_KEY": "base64:SBnqwbzS1dz1l5W0VZODt6/YTo/zbebBpPNmCWZf9DY=",
+      "APP_URL": "https://your-vercel-app.vercel.app"
+    },
+    "build": {
+      "env": {
+        "COMPOSER_INSTALL": "composer install --no-dev --optimize-autoloader"
+      }
+    }
+  }
